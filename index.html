@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Wiki de la Nintendo switch</title>
+    <link rel="stylesheet"href="style.css">
+</head>
+<body>
+    <header>
+      <p><img src="images/logo wiki.jpg"alt="logo"class="image-arrondie"width="120"></p>
+      <h1>Bienvenue sur le Wiki de la Nintendo switch</h1>
+      <nav>
+        <a href="index.html">Accueil</a>
+        <a href="histoire.html">Histoire</a>
+        <a href="jeux connus.html">Jeux les plus connus</a>
+        <a href="modèles nintendo.html">Modèles</a>
+      </nav>
+    </header>
+
+    <main>
+<div class="bloc">
+    <button id="btn" class="btn">Mode sombre/clair</button>
+<script>
+    document.getElementById("btn").addEventListener("click", function () {
+        // Si le fond est blanc → on passe en mode sombre
+        if (document.body.style.background === "white" || document.body.style.background === "") {
+            document.body.style.background = "black";  // fond sombre
+            document.body.style.color = "white";          // texte clair
+        } else {
+            // Sinon, on revient au mode clair
+            document.body.style.background = "white";  
+            document.body.style.color = "black";    
+        }
+    });
+</script>
+</div>
+    <section>
+        <h2>Accueil</h2>
+        <p>Sur ce site, vous allez découvrir l'<a href="histoire.html">histoire</a> de la Nintendo switch, ses <a href="jeux connus.html">jeux les plus connus</a> et les différents <a href="modèles nintendo.html">modèles</a> de cette console.</p>
+    </section>
+
+    <section>
+<h3>A propos de Nintendo</h3>
+<p>Pour plus d'infos va voir : <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://fr.wikipedia.org/wiki/Nintendo_Switch&ved=2ahUKEwi_tdWl2rKRAxW_dqQEHR37CWoQFnoECA0QAQ&usg=AOvVaw3_hXPASECWHrz8U1gi3PW7">Nintendo switch wikipédia</a>.</p>
+<p>Pour acheter une Nintendo switch <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.fnac.com/n470487/Nintendo-Switch/Consoles-Nintendo-Switch&ved=2ahUKEwi8q-mB47KRAxULNvsDHd8xGM0QFnoECCUQAQ&usg=AOvVaw0pALlnr2w0r2-IwKcOAuNp" target="_blank">cliquez ici</a>.</p>
+<p>Pour en savoir plus sur la Nintendo switch 2 <a href="https://youtu.be/sX24TZZPHhI" target="_blank">cliquez ici</a>.</p>
+    </section>
+    </main>
+
+    <footer>
+        <p>2025 - Wiki de la Nintendo switch - page 1</p>
+    </footer>
+</body>
+</html>

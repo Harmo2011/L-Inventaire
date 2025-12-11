@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Histoire</title>
+    <link rel="stylesheet"href="style.css">
+</head>
+<body>
+    <header>
+      <p><img src="images/logo wiki.jpg"alt="logo"class="image-arrondie"width="120"></p>
+      <h1>Bienvenue sur le Wiki de la Nintendo switch</h1>
+      <nav>
+        <a href="index.html">Accueil</a>
+        <a href="histoire.html">Histoire</a>
+        <a href="jeux connus.html">Jeux les plus connus</a>
+        <a href="modèles nintendo.html">Modèles</a>
+      </nav>
+    </header>
+
+    <main>
+<div class="bloc">
+    <button id="btn" class="btn">Mode sombre/clair</button>
+<script>
+    document.getElementById("btn").addEventListener("click", function () {
+        // Si le fond est blanc → on passe en mode sombre
+        if (document.body.style.background === "white" || document.body.style.background === "") {
+            document.body.style.background = "black";  // fond sombre
+            document.body.style.color = "white";          // texte clair
+        } else {
+            // Sinon, on revient au mode clair
+            document.body.style.background = "white";  
+            document.body.style.color = "black";    
+        }
+    });
+</script>
+</div>
+        <h2>Histoire de la Nintendo switch</h2>
+        <p>La Nintendo Switch est sortie en mars 2017. Elle se distingue par son concept hybride : c’est à la fois une console de salon et une console portable. Ce choix vient du désir de Nintendo de fusionner ses deux gammes (portable et salon).</p>
+        <p>En effet, après le succès de la Wii mais l’échec commercial de la Wii U, Nintendo cherche une nouvelle idée pour se relancer. L’entreprise remarque que beaucoup de joueurs aiment jouer aussi bien sur téléviseur qu’en déplacement.</p>
+        <p>C’est ainsi qu’est né le concept d’une console hybride, capable d’être utilisée partout.</p>
+
+        <p>Pour en savoir plus sur la Nintendo switch lis <a href="jeux connus.html">Jeux les plus connus</a>.</p>
+    </main>
+
+    <footer>
+        <p>2025 - Wiki de la Nintendo switch - page 2</p>
+    </footer>
+</body>
+</html>

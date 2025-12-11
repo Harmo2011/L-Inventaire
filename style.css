@@ -1,0 +1,75 @@
+body {
+    margin: 20px;
+    font-family: 'Tahoma', sans-serif;
+    background-color: white;
+    color: black;
+    transition: 0.3s;
+}
+
+
+header, footer {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin:0 10px;
+}
+
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+table, th, td {
+    border: 1px solid blue;
+    border-collapse: collapse; /* évite les doubles bordures */
+  }
+
+.image-arrondie {
+  border-radius: 200px; /* arrondi des coins */
+}
+
+.zoom {
+    width: 200px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.zoom:hover {
+    transform: scale(1.2);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+    .btn {
+        padding: 12px 25px;
+        background: black;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 18px;
+        transition: 0.2s;
+    }
+
+    .btn:hover {
+        background: white;
+        color: black;
+        text-decoration: underline;
+    }
+
+.bloc {
+    width: 40%;        /* Le bloc occupe 40% de la largeur de la page */
+    margin: 0 auto;    /* Centrer le bloc horizontalement */
+    background: black;
+    padding: 10px;
+    text-align: center;
+    background: rgba(0,0,0,0.3); /* fond semi-transparent */
+    border: 3px solid black; /* bordure noire de 2px */
+}
+
+

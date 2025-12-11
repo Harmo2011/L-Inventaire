@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Modèles</title>
+    <link rel="stylesheet"href="style.css">
+</head>
+<body>
+    <header>
+      <p><img src="images/logo wiki.jpg"alt="logo"class="image-arrondie"width="120"></p>
+      <h1>Bienvenue sur le Wiki de la Nintendo switch</h1>
+      <nav>
+        <a href="index.html">Accueil</a>
+        <a href="histoire.html">Histoire</a>
+        <a href="jeux connus.html">Jeux les plus connus</a>
+        <a href="modèles nintendo.html">Modèles</a>
+      </nav>
+    </header>
+
+    <main>
+<div class="bloc">
+    <button id="btn" class="btn">Mode sombre/clair</button>
+<script>
+    document.getElementById("btn").addEventListener("click", function () {
+        // Si le fond est blanc → on passe en mode sombre
+        if (document.body.style.background === "white" || document.body.style.background === "") {
+            document.body.style.background = "black";  // fond sombre
+            document.body.style.color = "white";          // texte clair
+        } else {
+            // Sinon, on revient au mode clair
+            document.body.style.background = "white";  
+            document.body.style.color = "black";    
+        }
+    });
+</script>
+</div>
+        <h2>Les différents modèles Nintendo switch</h2>
+        <p>2 ans après la sortie de la Nintendo switch 1 en 2017, la Nintendo switch Lite sort (2019). C'est une version uniquement portable, plus petite et moins chère. En 2021, sort un nouveau modèle, la switch OLED, avec un écran plus grand, un meilleur son et un support amélioré.</p>
+        <p>En juin de cette année (2025), sort le dernier modèle Nintendo, la switch 2. Ce modèle garde le concept hybride de la Nintendo switch 1 mais avec un meilleur écran et une meilleure performance pour offrir une expérience de jeu plus fluide, plus moderne, tout en restant polyvalente.</p>
+
+<p><table>
+  <tr>
+    <th>Switch 1</th>
+    <th>Switch light</th>
+    <th>Switch OLED</th>
+    <th>Switch 2</th>
+  </tr>
+  <tr>
+    <td>2017</td>
+    <td>2019</td>
+    <td>2021</td>
+    <td>2025</td>
+  </tr>
+</table></p>
+
+<p>Nintendo switch 1 :</p>                     
+<p><img src="images/switch 1.jpg"class="zoom"alt="switch 1"width="350"></p> 
+<p>Nintendo switch light :</p>
+<p><div>
+  <img src="images/switch light.jpg"class="zoom"alt="switch light bleu turquoise"width="275">
+  <img src="images/switch light bleu.jpg"class="zoom"alt="switch light bleu foncé"width="300">
+  <img src="images/switch light jaune.jpg"class="zoom"alt="switch light jaune"width="300">
+</div></p>
+<p>Nintendo switch OLED :</p>
+<p><img src="images/nintendo oled.jpg"class="zoom"alt="switch oled"width="250"</p>
+<p>Nintendo switch 2 :</p>
+<p><img src="images/switch 2.jpg"class="zoom"alt="switch 2"width="200"</p>
+    </main>
+
+    <footer>
+        <p>2025 - Wiki de la Nintendo switch - page 4</p>
+    </footer>
+</body>
+</html>
