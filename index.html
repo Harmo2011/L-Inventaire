@@ -2,19 +2,15 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Nintendo switch 1 - L'Inventaire</title>
-    <link rel="stylesheet"href="style.css">
+    <title>L'Inventaire</title>
+    <link rel="stylesheet" href="style 3.css">
 </head>
+
 <body>
-    <header>
+
+<header>
       <p><img src="logo wiki.jpg"alt="logo"class="image-arrondie"width="100"></p>
-      <h1>Bienvenue dans l'Inventaire - Nintendo switch 1</h1>
-      <nav>
-        <a href="index.html">Accueil</a>
-        <a href="histoire.html">Histoire</a>
-        <a href="jeux connus.html">Jeux les plus connus</a>
-        <a href="modèles nintendo.html">Autres consoles Nintendo</a>
-      </nav>
+      <h1>Bienvenue dans L'Inventaire</h1>
     </header>
 
     <main>
@@ -34,27 +30,58 @@
     });
 </script>
 </div>
-    <section>
-        <h2>Accueil</h2>
-        <p>Sur cette page, vous allez découvrir l'histoire de la Nintendo switch 1, ses jeux les plus connus et les autres consoles de cette grande entreprise qu'est Nintendo.</p>
-    </section>
 
-    <section>
-<h3>A propos de Nintendo</h3>
-<p>Pour plus d'infos sur la switch 1 va voir : <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://fr.wikipedia.org/wiki/Nintendo_Switch&ved=2ahUKEwi_tdWl2rKRAxW_dqQEHR37CWoQFnoECA0QAQ&usg=AOvVaw3_hXPASECWHrz8U1gi3PW7">Nintendo switch 1 wikipédia</a>.</p>
-<p>Pour en savoir plus sur la Nintendo switch 2 <a href="https://youtu.be/sX24TZZPHhI" target="_blank">cliquez ici</a>.</p>
-    </section>
+<h1>A découvrir</h1>
 
- <section>
-<h3>A propos de L'Inventaire</h3>
-<p>Pour consulter notre boutique en ligne <a href="boutiquefactice.html">cliquez ici</a>.</p>
+<input type="text" id="searchBar" placeholder="Rechercher...">
+<p> </p>
+<script>
+    const searchBar = document.getElementById("searchBar");
 
-    </main>
+searchBar.addEventListener("input", () => {
+    const query = searchBar.value.toLowerCase();
+    const items = document.querySelectorAll(".product");
 
-    <footer>
-        <p>2025 - Nintendo switch 1 - L'Inventaire - page 1</p>
+    items.forEach(item => {
+        const text = item.textContent.toLowerCase();
+        item.style.display = text.includes(query) ? "block" : "none";
+    });
+});
+</script>
+<!-- PRODUITS -->
+<div class="products">
+    <div class="product">
+        <h3><a href="accueil nintendo 1.html">Nintendo switch 1</a></h3>
+    </div>
+
+    <div class="product">
+        <h3>Nintendo switch light bleu</h3>
+    </div>
+   
+    <div class="product">
+        <h3>Nintendo switch light bleu turquoise</h3>
+    </div>
+
+    <div class="product">
+        <h3>Nintendo switch light dorée</h3>
+    </div>
+
+    <div class="product">
+        <h3>Nintendo switch OLED</h3>
+    </div>
+
+    <div class="product">
+         <h3>Nintendo switch 2</h3>
+     </div>
+</div>
+
+</main>
+
+<h2>A propos de L'Inventaire</h2>
+<p>Pour consulter notre boutique en ligne <a href="système de paiement.html">cliquez ici</a> ou scanner ce QR code : </p>
+<p><img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://harmo2011.github.io/L-Inventaire/boutiquefactice.html" alt="QR"id="qr"></p>
+ <footer>
+        <p>2025 - L'Inventaire</p>
     </footer>
 </body>
 </html>
-
-
