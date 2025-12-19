@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Nintendo switch 2 - L'Inventaire</title>
+    <link rel="stylesheet"href="style.css">
+</head>
+<body>
+    <header>
+      <p><img src="images/logo wiki.jpg"alt="logo"class="image-arrondie"width="100"></p>
+      <h1>Bienvenue dans l'Inventaire - Nintendo switch 2</h1>
+      <nav>
+        <a href="accueil switch 2.html">Accueil</a>
+        <a href="histoire switch 2.html">Histoire</a>
+      </nav>
+    </header>
+
+    <main>
+<div class="bloc">
+    <button id="btn" class="btn">Mode sombre/clair</button>
+<script>
+    document.getElementById("btn").addEventListener("click", function () {
+        // Si le fond est blanc → on passe en mode sombre
+        if (document.body.style.background === "white" || document.body.style.background === "") {
+            document.body.style.background = "black";  // fond sombre
+            document.body.style.color = "white";          // texte clair
+        } else {
+            // Sinon, on revient au mode clair
+            document.body.style.background = "white";  
+            document.body.style.color = "black";    
+        }
+    });
+</script>
+</div>
+    <section>
+        <h2>Accueil</h2>
+        <p>La Nintendo switch est sortie officiellement le 5 juin 2025 mais en réalité, la rumeur de son existence a débuté en 2023. Son objectif est d’améliorer les performances tout en gardant l’identité hybride de la Switch, c’est-à-dire jouable en mode portable ou sur téléviseur.</p>
+
+<p>Après sa sortie, les ventes ont rapidement explosées avec plus de 3,5 millions d'unités vendues en quatre jours après sa sortie.
+Cela est dû notamment à :</p>
+<ul>
+<li>La rétrocompatibilité avec la majorité des jeux de la Nintendo Switch 1</li>
+<li>Le lancement de jeux exclusifs dont Mario Kart world</li>
+<li>Des nouveaux Joy-Con 2 qui se connectent magnétiquement et incluent des fonctions innovantes comme un mode souris pour certains jeux</li>
+<li>La puissance graphique de la console, nettement supérieur</li>
+<li>Un stockage interne accru et un affichage jusqu’à 4K en docké</li>
+</ul>
+<p>Son succès commercial a relancé la dynamique des consoles Nintendo et attiré l’attention des éditeurs tiers. Depuis sa sortie, la Nintendo Switch 2 continue d’élargir son catalogue et d’être supportée par de nouvelles versions de jeux classiques et modernes. </p>
+    </section>
+
+    <section>
+<h3>A propos de Nintendo</h3>
+<p>Pour plus d'infos sur la switch 1 va voir : <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://fr.wikipedia.org/wiki/Nintendo_Switch&ved=2ahUKEwi_tdWl2rKRAxW_dqQEHR37CWoQFnoECA0QAQ&usg=AOvVaw3_hXPASECWHrz8U1gi3PW7" target="_blank">Nintendo switch 1 wikipédia</a>.</p>
+    </section>
+
+    <section>
+<h3>A propos de L'Inventaire</h3>
+<p>Pour retourner sur l'accueil de notre site : <a href="index.html">cliquez ici</a>.</p>
+<p>Pour consulter notre boutique en ligne <a href="système de paiement.html">cliquez ici</a>.</p>
+    <section>
+    </main>
+
+    <footer>
+        <p>2025 - Nintendo switch 2 - L'Inventaire - page 1</p>
+    </footer>
+</body>
+</html>
