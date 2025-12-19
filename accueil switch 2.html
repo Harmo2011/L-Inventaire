@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Nintendo switch 2 - L'Inventaire</title>
+    <link rel="stylesheet"href="style.css">
+</head>
+<body>
+    <header>
+      <p><img src="images/logo wiki.jpg"alt="logo"class="image-arrondie"width="100"></p>
+      <h1>Bienvenue dans l'Inventaire - Nintendo switch 2</h1>
+      <nav>
+        <a href="accueil switch 2.html">Accueil</a>
+        <a href="histoire switch 2.html">Histoire</a>
+      </nav>
+    </header>
+
+    <main>
+<div class="bloc">
+    <button id="btn" class="btn">Mode sombre/clair</button>
+<script>
+    document.getElementById("btn").addEventListener("click", function () {
+        // Si le fond est blanc → on passe en mode sombre
+        if (document.body.style.background === "white" || document.body.style.background === "") {
+            document.body.style.background = "black";  // fond sombre
+            document.body.style.color = "white";          // texte clair
+        } else {
+            // Sinon, on revient au mode clair
+            document.body.style.background = "white";  
+            document.body.style.color = "black";    
+        }
+    });
+</script>
+</div>
+    <section>
+        <h2>Accueil</h2>
+        <p>Sur cette page, vous allez découvrir l'histoire de la Nintendo switch 2.</p>
+    </section>
+
+    <section>
+<h3>A propos de Nintendo</h3>
+<p>Pour plus d'infos sur la switch 2 va voir : <a href="https://fr.wikipedia.org/wiki/Nintendo_Switch_2" target="_blank">Nintendo switch 2 wikipédia</a>.</p>
+    </section>
+
+    <section>
+<h3>A propos de L'Inventaire</h3>
+<p>Pour retourner sur l'accueil de notre site : <a href="index.html">cliquez ici</a>.</p>
+<p>Pour consulter notre boutique en ligne <a href="système de paiement.html">cliquez ici</a>.</p>
+    </section>
+    </main>
+
+    <footer>
+        <p>2025 - Nintendo switch 2 - L'Inventaire - page 1</p>
+    </footer>
+</body>
+</html>
