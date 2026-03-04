@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Boutique en ligne - L'Inventaire</title>
+    <link rel="stylesheet" href="style 3.css">
+</head>
+
+<body>
+
+<header>
+      <p><img src="images/logo wiki.jpg"alt="logo"class="image-arrondie"width="100"></p>
+      <h1>Bienvenue sur la boutique en ligne de L'Inventaire</h1>
+      <nav>
+        <a href="index.html">Accueil de L'Inventaire</a>
+      </nav>
+    </header>
+
+    <main>
+<div class="bloc">
+    <button id="btn" class="btn">Mode sombre/clair</button>
+<script>
+document.getElementById("btn").addEventListener("click", function () {
+
+    document.body.classList.toggle("dark-mode");
+
+    const section = document.getElementById("maSection");
+    section.classList.toggle("section-dark");
+
+});
+</script>
+</div>
+
+<details id="maSection">
+  <summary><h1>Articles</h1></summary>
+  <p>
+<input type="text" id="searchBar" placeholder="Rechercher un article...">
+<p> </p>
+<script>
+    const searchBar = document.getElementById("searchBar");
+
+searchBar.addEventListener("input", () => {
+    const query = searchBar.value.toLowerCase();
+    const items = document.querySelectorAll(".product");
+
+    items.forEach(item => {
+        const text = item.textContent.toLowerCase();
+        item.style.display = text.includes(query) ? "block" : "none";
+    });
+});
+</script>
+<!-- PRODUITS -->
+<div class="products">
+
+     <div class="product">
+         <img src="images/animal crossing jeu.jpg"class="zoom"alt="animal crossing">
+         <h3>Animal crossing jeu switch</h3>
+         <p>29.90 €</p>
+         <button onclick="addToCart('Animal crossing jeu switch', 29.90)">Ajouter au panier</button>
+     </div>
+
+     <div class="product">
+         <img src="images/luigi mansion jeu.jpg"class="zoom"alt="luigi's mansion">
+         <h3>Luigi's mansion 3 jeu switch</h3>
+         <p>29.90 €</p>
+         <button onclick="addToCart('Luigis mansion 3 jeu switch', 29.90)">Ajouter au panier</button>
+     </div>
+
+     <div class="product">
+         <img src="images/mario kart.jpg"class="zoom"alt="mariokart">
+         <h3>Mariokart 8 deluxe jeu switch</h3>
+         <p>29.90 €</p>
+         <button onclick="addToCart('Mariokart jeu switch', 29.90)">Ajouter au panier</button>
+     </div>
+
+    <div class="product">
+         <img src="images/minecraft jeu.jpg"class="zoom"alt="minecraft">
+         <h3>Minecraft jeu switch</h3>
+         <p>29.90 €</p>
+         <button onclick="addToCart('Minecraft jeu switch', 29.90)">Ajouter au panier</button>
+     </div>
+
+    <div class="product">
+        <img src="images/switch 1.jpg"class="zoom"alt="nintendo switch 1">
+        <h3>Nintendo Switch 1</h3>
+        <p>359.90 €</p>
+        <button onclick="addToCart('Nintendo Switch 1', 359.90)">Ajouter au panier</button>
+    </div>
+
+    <div class="product">
+         <img src="images/switch 2.jpg"class="zoom"alt="nintendo switch 2">
+         <h3>Nintendo switch 2</h3>
+         <p>499.90 €</p>
+         <button onclick="addToCart('Nintendo switch 2', 499.90)">Ajouter au panier</button>
+     </div>
+
+    <div class="product">
+        <img src="images/switch light bleu.jpg"class="zoom"alt="nintendo switch light turquoise">
+        <h3>Nintendo switch light bleu foncée</h3>
+        <p>289.90 €</p>
+        <button onclick="addToCart('Nintendo switch light bleu turquoise', 289.90)">Ajouter au panier</button>
+    </div>
+
+    <div class="product">
+        <img src="images/switch light.jpg"class="zoom"alt="nintendo switch light bleu">
+        <h3>Nintendo switch light bleu turquoise</h3>
+        <p>289.90 €</p>
+        <button onclick="addToCart('Nintendo switch light', 289.90)">Ajouter au panier</button>
+    </div>
+
+    <div class="product">
+        <img src="images/switch light jaune.jpg"class="zoom"alt="nintendo switch light dorée">
+        <h3>Nintendo switch light dorée</h3>
+        <p>299.90 €</p>
+        <button onclick="addToCart('Nintendo switch light dorée', 299.90)">Ajouter au panier</button>
+    </div>
+
+    <div class="product">
+        <img src="images/nintendo oled.jpg"class="zoom"alt="nintendo switch oled">
+        <h3>Nintendo switch OLED</h3>
+        <p>399.90 €</p>
+        <button onclick="addToCart('Nintendo switch OLED', 399.90)">Ajouter au panier</button>
+    </div>
+
+    <div class="product">
+         <img src="images/splatoon 2.jpg"class="zoom"alt="splatoon 2">
+         <h3>Splatoon 2 jeu switch</h3>
+         <p>29.90 €</p>
+         <button onclick="addToCart('Splatoon 2 jeu switch', 29.90)">Ajouter au panier</button>
+     </div>
+
+     <div class="product">
+         <img src="images/mario odyssey jeu.jpg"class="zoom"alt="mario odyssey">
+         <h3>Super mario odyssey jeu switch</h3>
+         <p>29.90 €</p>
+         <button onclick="addToCart('Super mario odyssey jeu switch', 29.90)">Ajouter au panier</button>
+     </div>
+
+     <div class="product">
+         <img src="images/smash bros ultimate.jpg"class="zoom"alt="super smash bros ultimate">
+         <h3>Super smash bros ultimate jeu switch</h3>
+         <p>29.90 €</p>
+         <button onclick="addToCart('Super smash bros ultimate jeu switch', 29.90)">Ajouter au panier</button>
+     </div>
+
+    <div class="product">
+         <img src="images/zelda jeu.jpg"class="zoom"alt="zelda">
+         <h3>The legend of zelda breath of the wild jeu switch</h3>
+         <p>29.90 €</p>
+         <button onclick="addToCart('Zelda jeu switch', 29.90)">Ajouter au panier</button>
+     </div>
+</div>
+
+</main></p>
+</details>
+
+<!-- PANIER -->
+<h1>Panier</h1>
+<div id="cart"></div>
+<p id="total"><strong>Total : 0 €</strong></p>
+<button onclick="payCart()">Payer</button>
+<p> </p>
+<!-- JAVASCRIPT DIRECTEMENT DANS LE HTML -->
+<script>
+    let cart = [];
+
+    function addToCart(name, price) {
+        cart.push({ name, price });
+        updateCart();
+    }
+
+    function removeFromCart(index) {
+        cart.splice(index, 1);
+        updateCart();
+    }
+
+    function updateCart() {
+        const cartDiv = document.getElementById("cart");
+        let total = 0;
+        cartDiv.innerHTML = "";
+
+        cart.forEach((item, index) => {
+            total += item.price;
+
+            cartDiv.innerHTML += `
+                <div>
+                    ${item.name} - ${item.price.toFixed(2)} €
+                    <button onclick="removeFromCart(${index})">Retirer</button>
+                </div>
+            `;
+        });
+
+        document.getElementById("total").innerHTML =
+            "<strong>Total : " + total.toFixed(2) + " €</strong>";
+    }
+
+    function payCart() {
+        if (cart.length === 0) {
+            alert("Votre panier est vide !");
+            return;
+        }
+
+        alert("Paiement effectué ! Merci pour votre achat.");
+        cart = [];
+        updateCart();
+    }
+</script>
+
+ <footer>
+        <p>2026 - Boutique en ligne - L'Inventaire</p>
+    </footer>
+</body>
+</html>
